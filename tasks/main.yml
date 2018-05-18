@@ -5,7 +5,7 @@
 #       an Ansible Tower cluster.
 #
 - name: Deprovision and clean up and Ansible Tower node
-  hosts: tower2.ans3.internal
+  hosts: all
   tasks:
     - name: Shut down Tower
       command: ansible-tower-service stop
